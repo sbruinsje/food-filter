@@ -1,0 +1,73 @@
+
+##################################################################
+# API
+##################################################################
+
+/v1/ingredient
+GET  /v1/ingredient/:id/
+POST /v1/ingredient/
+PUT /v1/ingredient/:id/
+DELETE /v1/ingredient/:id/
+
+/v1/product
+GET  /v1/product/:id/
+POST /v1/product/
+PUT /v1/product/:id/
+DELETE /v1/product/:id/
+
+##################################################################
+# Datamodel
+##################################################################
+user_recipe => {
+    id <int>
+    user_id <int>
+    recipe_id <int>
+}
+recipe => {
+    id <int>
+    title <string>
+    meal_type, <ENUM: BREAKFAST|LUNCH|DINNER|DESSERT|AMUSE|SNACK>
+    servings <int>
+    difficulty <ENUM: SIMPLE|NORMAL|COMPLEX>
+    cook_time <int> (in minutes)
+    preperation_time <int>
+    is_vegan <boolean>
+    is_vegetarian <boolean>
+}
+
+recipe_method => {
+    id <int>
+    recipe_id <int>
+    description <string>
+    order <int>
+}
+
+
+recipe_ingredient => {
+    id <int>
+    recipe_id <int>
+    ingredient_id <int>
+    description <string>    (this allows a recipe to overwrite the ingredient name in its ingredient list)
+}
+
+recipe_ingredient_prodct => {
+    id <int>
+    shop_id <int>
+    recipe_ingredient_id <int>
+    product_id <int>
+    product_quantity <Float>
+    product_quantity_units <ENUM: PIECE|GRAM>
+}
+
+ingredient => {
+    id <int>
+    name <string>
+    picture_url <string>
+}
+
+product => {
+    id <int>
+    name <string>
+    url <string>
+    picture_url <string>
+}

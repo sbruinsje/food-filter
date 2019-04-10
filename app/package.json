@@ -1,0 +1,48 @@
+{
+    "name": "food-filter",
+    "version": "0.0.1",
+    "description": "About food",
+    "main": "index.js",
+    "license": "none",
+    "scripts": {
+        "start": "npm run webpack; http-server",
+        "webpack": "webpack",
+        "watch:webpack": "webpack --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sbruinsje/food-filter.git"
+    },
+    "author": "Stefan Bruins",
+    "bugs": {
+        "url": "https://github.com/sbruinsje/food-filter/issues"
+    },
+    "homepage": "https://github.com/sbruinsje/food-filter#readme",
+    "dependencies": {
+        "vue": "^2.6.10",
+        "vue-router": "^3.0.3",
+        "vuex": "^3.1.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.0",
+        "@babel/core": "^7.2.2",
+        "@babel/polyfill": "^7.0.0",
+        "@babel/preset-env": "^7.2.0",
+        "babel-loader": "^8.0.4",
+        "clean-webpack-plugin": "^1.0.0",
+        "css-loader": "^2.0.1",
+        "file-loader": "^3.0.1",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "http-server": "^0.11.1",
+        "less": "^3.9.0",
+        "less-loader": "^4.1.0",
+        "serviceworker-webpack-plugin": "^1.0.1",
+        "style-loader": "^0.23.1",
+        "url-loader": "^1.1.2",
+        "vue-loader": "^15.7.0",
+        "vue-template-compiler": "^2.6.10",
+        "webpack": "^4.28.0",
+        "webpack-cli": "^3.1.2"
+    }
+}
