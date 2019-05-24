@@ -1,9 +1,9 @@
 // I have no clue how service workers work but they are  a pain in the 
-// ass to understand and test. Will come back to this later...
+// ass to understand and test for beginners. Will come back to this later...
 // Here are some resources:
 // - https://developers.google.com/web/fundamentals/primers/service-workers/
 // - https://redfin.engineering/service-workers-break-the-browsers-refresh-button-by-default-here-s-why-56f9417694
-
+// - https://www.npmjs.com/package/serviceworker-webpack-plugin
 const { assets } = global.serviceWorkerOption;
 const CACHE_NAME = new Date().toISOString();
 let assetsToCache = [...assets, './'];

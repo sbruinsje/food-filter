@@ -1,3 +1,25 @@
+// Webpack plugins that I may add in the future:
+- CaseSensitivePathsPlugin
+- FriendlyErrorsWebpackPlugin (detects certain webpack errors catches them and shows a clearer error message)
+- HotModuleReplacementPlugin
+
+
+// Styleguide for javascript code
+https://github.com/airbnb/javascript
+
+
+
+The server worker code I had before:
+    More abaut webpack and the service worker: https://www.npmjs.com/package/serviceworker-webpack-plugin
+    import runtime from 'serviceworker-webpack-plugin/lib/runtime';
+    import image_url from './images/big.jpg';
+    document.querySelector("#image").src = image_url;
+    if ('serviceWorker' in navigator) {
+        const registration = runtime.register();
+    }
+
+
+    
 
 ##################################################################
 # API

@@ -1,5 +1,5 @@
 const ingredients = [{
-    name: "Venkelknol"s
+    name: "Venkelknol"
 }, {
 
 }];
